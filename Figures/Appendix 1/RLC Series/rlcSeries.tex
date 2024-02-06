@@ -1,0 +1,37 @@
+\documentclass[border={1cm 1cm 1cm 1cm}]{standalone}
+\usepackage[siunitx]{circuitikz}
+
+\begin{document}
+\begin{circuitikz}[scale=1.3]
+    % AC voltage source with label
+    \draw (0,0) to[sV, l=${V_s}$] (0,3)
+    to[short, i>^=$ {I}_s$] (2,3); 
+    % Resistor with terminal and label
+    \draw (2,3) to[R, *-, i>^=$ {I}_R$] (4,3);
+    % Manually added resistor label
+    \draw (3,3) node[above, yshift=0.2cm] {$R = \frac{1}{G}$};
+    % Inductor with label
+    \draw (4,3) to[L, l=$L$, i>^=$ {I}_L$] (6,3);
+    % Capacitor with label
+    \draw (6,3) to[C, l=$C$, i>^=$ {I}_C$] (6,0);
+    % Connection back to the voltage source
+    \draw (0,0) to[short] (2,0)
+    to[short, *-] (2,0) % Terminal on the bottom wire before the resistor
+    to[short] (6,0);
+    % Dashed line indicating Zin
+    \draw [dashed] (2,4) -- (2,-1);
+    
+    % Currents and Voltages positioned similarly to the previous script
+    \draw (3,2.5) node[below, yshift=0.4cm] {$+  {V_R} -$};
+    \draw (5,2.5) node[below, yshift=0.4cm] {$+  {V_L} -$};
+    \draw (5.5,1.5) node[left, yshift=0.4cm] {$+$} node[left] {$ {V}_C$} node[left, yshift=-0.5cm] {$-$};
+
+    % Impedance arrow and label
+    \draw[->, >=stealth] (1.3, -1) -- (1.3, 0.5) -- (1.8, 0.5) node[midway, below, yshift=-2cm] {$Z_{in} = R + j\omega L - \frac{j}{\omega C}$};
+    
+    % Impressed Voltage Source Label
+    \draw[->, >=stealth] (-1, 0) -- (-0.3, 1) node[midway, below, yshift=-0.8cm, xshift=-1.4cm, align=center] {Impressed\\Voltage\\Source};
+    \draw[dashed] (-2.5, -1.3) rectangle (-1, -0.1);
+
+\end{circuitikz}
+\end{document}
