@@ -10,7 +10,7 @@ c = 3e8 # speed of light
 # wavelength = c / f
 wavelength = 100
 k = 2 * np.pi / wavelength  # Assuming a wavelength of 1 for simplicity
-h = 0.25*wavelength  # Assuming the total length of the antenna is 1
+h = 0.625*wavelength  # Assuming the total length of the antenna is 1
 z1 = -h
 z2 = 0
 z3 = h
@@ -124,8 +124,8 @@ for r in r_values:
         # Column vector of the E field at one point in space (spherical coords)
         Esph = rectToSph @ Ecart
         # Save E field to array
-        Er[i] = (Esph[0])
-        Etheta[i] = (Esph[1])
+        Er[i] = Esph[0]
+        Etheta[i] = Esph[1]
 
     # Calculate Etheata normalization factor
     # Matrix to convert from cylindrical coord to rect (need to inverse it though)
@@ -199,7 +199,7 @@ ax_polar.set_theta_zero_location('N')  # 0 degrees at the top
 ax_polar.set_theta_direction(-1)  # Clockwise
 ax_polar.set_title(f'Polar Plot of Normalized $|E_{{\\theta}}|$ vs $\\theta$ for $h = {h/wavelength:.3f}\\lambda$ and sweeping $r$')
 ax_polar.grid(True)
-ax_polar.set_ylim(-40, 0)
+ax_polar.set_ylim(-40, 30)
 
 # Create a shared legend
 # Adjusting layout for better control over legend placement

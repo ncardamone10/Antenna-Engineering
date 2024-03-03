@@ -58,7 +58,7 @@ def E_phi(x, y, z, I_0, k, z1, z2, z3):
 # Goal: plot magnitude of Etheta and Er (dB) for r in range(0,50*wavelength), when theta = 90 degrees, phi=0
 numberOfPoints = 10000
 # Spherical Coords to Sweep Over
-r = np.linspace(0.01*wavelength, 100*wavelength,numberOfPoints)
+r = np.linspace(0.01*wavelength, 30*wavelength,numberOfPoints)
 phi = np.zeros_like(r)
 theta = np.pi/2*np.ones_like(r)
 

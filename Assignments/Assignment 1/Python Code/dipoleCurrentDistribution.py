@@ -19,9 +19,11 @@ z2 = np.linspace(-h2, h2, 1000)
 
 # Define the current distribution function I(z) for both antenna lengths
 def I(z, h, z1, z2, z3):
-    return np.piecewise(z, [z > z2, z <= z2],
-                        [lambda z: I_0 * np.sin(k * (z3 - z)) / np.sin(k * h),
-                         lambda z: I_0 * np.sin(k * (z - z1)) / np.sin(k * h)])
+    h1 = z2-z1
+    h2 = z3-z2
+    return np.piecewise(z, [z >= z2, z < z2],
+                        [lambda z: I_0 * np.sin(k * (z3 - z)) / np.sin(k * h2),
+                         lambda z: I_0 * np.sin(k * (z - z1)) / np.sin(k * h1)])
 
 # Calculate the current values using the piecewise function
 current1 = I(z1, h1, -h1, 0, h1)
