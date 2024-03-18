@@ -3,44 +3,57 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 
 # Plotting Constants
-phi = [0, 90, 180, 270]
+phi = [0, 45, 90]
 EPSILON = 1e-20
 
 # Plotting Variables
 numberOfPoints = 100
-theta = np.linspace(0, np.pi/2, numberOfPoints)
+theta = np.linspace(0, np.pi, numberOfPoints)
 
 # Free Space Wave Impedance
 eta = 120*np.pi
 
 # Radiation Intensity
-def U(theta, phi, EPSILON=1e-20):
+def Emag3(theta, phi, EPSILON=1e-20):
     theta = theta + EPSILON   # Small constant to avoid division by zero
     phi = phi + EPSILON   # Small constant to avoid division by zero
-    terms = np.zeros(7)
-    terms[0] = 1/np.tan(theta)**2
-    terms[1] = -4*np.tan(phi)/(np.cos(theta)*np.tan(theta)**2)
-    terms[2] = np.tan(phi)**2
-    terms[3] = 1/np.sin(theta)**2
-    terms[4] = -1
-    terms[5] = np.tan(phi)**2/np.tan(theta)**2
-    terms[6] = 1/(np.tan(theta)*np.sin(phi))**2
-    result = np.sum(terms)/(32*np.pi**2*eta)
-    return result
-
-def Emag(theta, phi, EPSILON=1e-20):
-    theta = theta + EPSILON   # Small constant to avoid division by zero
-    phi = phi + EPSILON   # Small constant to avoid division by zero
-    Etheta = np.tan(phi)/np.sin(theta) - 1/np.tan(theta)
+    Etheta = np.sin(phi) - np.cos(theta)*np.sin(phi)
     Etheta = Etheta/(4*np.pi)
-    Ephi = 1/np.tan(theta) - 1/(np.sin(theta)*np.tan(phi))
+    Ephi = np.cos(theta)*np.cos(phi) - np.cos(phi)
     Ephi = Ephi/(4*np.pi)
-    Emag = np.sqrt(Etheta**2 + Ephi**2)
+    
+    # Matrix to convert from rect to spherical
+    rectToSph = np.array([
+        [np.sin(theta)*np.cos(phi), np.sin(theta)*np.sin(phi),  np.cos(theta)],
+        [np.cos(theta)*np.cos(phi), np.cos(theta)*np.sin(phi), -np.sin(theta)],
+        [-np.sin(phi),              np.cos(phi),                0            ]
+    ])
+    
+    
+    EvecSph = [0, Etheta, Ephi]
+    EvecCart = np.linalg.inv(rectToSph) @ EvecSph
+    Emag = np.sqrt(EvecCart[0]**2 + EvecCart[1]**2 + EvecCart[2]**2)
     return Emag
 
-
-
-
+def EmagDipole(theta, phi, EPSILON=1e-20, kh=0.5):
+    theta = theta + EPSILON   # Small constant to avoid division by zero
+    phi = phi + EPSILON   # Small constant to avoid division by zero
+    
+    Etheta = (np.cos(kh*np.cos(theta)) - np.cos(kh))/(np.sin(theta))
+    Ephi = 0
+    
+    # Matrix to convert from rect to spherical
+    rectToSph = np.array([
+        [np.sin(theta)*np.cos(phi), np.sin(theta)*np.sin(phi),  np.cos(theta)],
+        [np.cos(theta)*np.cos(phi), np.cos(theta)*np.sin(phi), -np.sin(theta)],
+        [-np.sin(phi),              np.cos(phi),                0            ]
+    ])
+    
+    
+    EvecSph = [0, Etheta, Ephi]
+    EvecCart = np.linalg.inv(rectToSph) @ EvecSph
+    Emag = np.sqrt(EvecCart[0]**2 + EvecCart[1]**2 + EvecCart[2]**2)
+    return Emag
 
 
 def mirror_data(theta, data):
@@ -52,7 +65,7 @@ def mirror_data(theta, data):
     theta_flipped = - theta_flipped
 
     # Concatenate the original and flipped arrays
-    theta_mirrored = np.concatenate((theta, theta_flipped))
+    theta_mirrored = np.concatenate((theta_flipped, theta))
     data_mirrored = np.concatenate((data, data_flipped))
 
     return theta_mirrored, data_mirrored
@@ -65,24 +78,17 @@ def mirror_data(theta, data):
 fig = plt.figure()
 
 # Create a GridSpec object
-gs = GridSpec(1, 2, figure=fig)
+gs = GridSpec(2, 2, figure=fig)
 ax1 = fig.add_subplot(gs[0], polar=True, frame_on=False)
-ax3 = fig.add_subplot(gs[1])
+ax3 = fig.add_subplot(gs[2], polar=True, frame_on=False)
 
+ax2 = fig.add_subplot(gs[1])
+ax4 = fig.add_subplot(gs[3])
 
 for i in range(len(phi)):
-    # radiationIntensity = []
-    # for theta0 in theta:
-    #     radiationIntensity.append(np.abs(U(theta0, phi[i]*np.pi/180)))
-        
-    # if np.max(radiationIntensity) == 0:
-    #     print(f'$Error: Co Pol phi = {phi[i]}^\circ is zero$')
-    # else:     
-    #     radiationIntensity = radiationIntensity/(np.max(radiationIntensity))  # Normalize the E field to 1 for plotting
-
     EmagVec = []
     for theta0 in theta:
-        EmagVec.append(np.abs(Emag(theta0, phi[i]*np.pi/180)))
+        EmagVec.append(np.abs(Emag3(theta0, phi[i]*np.pi/180)))
         
     if np.max(EmagVec) == 0:
         print(f'$Error: Emag phi = {phi[i]}^\circ is zero$')
@@ -93,34 +99,40 @@ for i in range(len(phi)):
 
     theta_mirrored, Emirrored = mirror_data(theta, EmagVec)
     
-    ax1.plot(theta_mirrored, 20*np.log10(Emirrored + EPSILON), label=f'$\phi = {phi[i]}^\circ$')
-    ax3.plot(theta_mirrored/np.pi*180, 20*np.log10(Emirrored + EPSILON), label=f'$\phi = {phi[i]}^\circ$')
+    ax1.plot(theta_mirrored, 20*np.log10(Emirrored + EPSILON), label=f'$\phi = {phi[i]} degrees$')
+    ax2.plot(theta_mirrored/np.pi*180, 20*np.log10(Emirrored + EPSILON), label=f'$\phi = {phi[i]} degrees$')
+    ax3.plot(theta_mirrored, (Emirrored + EPSILON), label=f'$\phi = {phi[i]} degrees$')
+    ax4.plot(theta_mirrored/np.pi*180, (Emirrored + EPSILON), label=f'$\phi = {phi[i]} degrees$')
 
-      
 
 
     
-#ax1.set_rlim(-100, 0)  
-ax3.set_ylim(-100, 0)  
-ax3.set_xlim(-1, 1)
+ax1.set_rlim(-100, 0)  
+ax2.set_ylim(-100, 0)  
+ax4.set_ylim(0, 1)  
 
 ax1.set_title('Meta Atom Radiation Intensity (dBi)')
-ax3.set_title('Meta Atom Radiation Intensity (dBi)')
-
+ax2.set_title('Meta Atom Radiation Intensity (dBi)')
+ax3.set_title('Meta Atom Radiation Intensity (Linear Scale)')
+ax4.set_title('Meta Atom Radiation Intensity (Linear Scale)')
 
 ax1.set_theta_offset(np.pi/2) 
 ax1.set_theta_direction(-1) 
+ax3.set_theta_offset(np.pi/2) 
+ax3.set_theta_direction(-1) 
 
+#ax1.legend(loc='center left')
+ax2.legend(loc='lower center') 
+ax3.legend(loc='lower center')   
+ax4.legend(loc='lower center')  
 
-ax1.legend(loc='lower center')   
-ax3.legend(loc='lower left')   
+ax2.grid(True)
+ax4.grid(True)
 
-ax3.grid(True)
-
-
-ax3.set_xlabel(r'$\theta$ (degrees)')
-ax3.set_ylabel(r'$U$ (dBi)')
-
+ax2.set_xlabel(r'$\theta$ (degrees)')
+ax2.set_ylabel(r'$U$ (dBi)')
+ax4.set_xlabel(r'$\theta$ (degrees)')
+ax4.set_ylabel(r'$U$ ')
 
 
 plt.tight_layout()  # To prevent overlapping
