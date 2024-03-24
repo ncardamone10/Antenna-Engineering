@@ -1,5 +1,6 @@
 '''
 This file solves the second question of antennas assignment 3
+Nope. Doesn't work. Gives wrong results. Just ignore this file.
 '''
 
 import numpy as np
@@ -31,35 +32,41 @@ def getD(k, h, beta, theta):
     U = getU2(k, h, beta, theta, I0, eta)
 
     # Generate theta values for integration
-    sinTheta = np.sin(theta)  # Compute sin(theta) for weighting
+    #sinTheta = np.sin(theta)  # Compute sin(theta) for weighting
    
     # Compute average U using weights
     #Uavg = np.average(U, weights=sinTheta)
-    Uavg = 0.5 * simpson(U*sinTheta, theta)
+    #Uavg = 0.5 * simpson(U*sinTheta, theta)
     # Calculate directivity D
-    D = U / Uavg
-
+    Prad = getPradSum(k, h, beta)
+    D = 4 * np.pi * U / Prad
     return D
 
-# Directivity for the antenna (analytical solution)
-def getD2(k, h, beta, theta, eta=120*np.pi):
+# Directivity for the antenna (analytical solution, only for b/k=1 though)
+def getD2(k, h, beta, theta, I0=1, eta=120*np.pi):
     # Check that theta is between 0 and pi
-    assert(min(theta) == 0 and max(theta) == np.pi)    
-    # Denominator terms
-    term1_denom = 1.415
-    term2_denom = np.log(2 * k * h / np.pi)
-    term3_denom = -special.sici(4 * k * h)[1]
-    term4_denom = np.sin(4 * k * h) / (4 * k * h + 1e-22)
-    
-    # Combine the denominator terms
-    denom = term1_denom + term2_denom + term3_denom + term4_denom
-    #denom *= (2 * h)**2
+    assert(min(theta) == 0 and max(theta) == np.pi) 
+    print(f'Calculating D2 for $\\beta/k={beta/k}$') 
+    if beta/k != 1:
+        # Get Prad for case when beta/k is not 1
+        Prad = getPrad(k, h, beta)
+        denom = Prad
+    else:  
+        # Denominator terms
+        term1_denom = 1.415
+        term2_denom = np.log(2 * k * h / np.pi)
+        term3_denom = -special.sici(4 * k * h)[1]
+        term4_denom = np.sin(4 * k * h) / (4 * k * h + 1e-22)
+        
+        # Combine the denominator terms
+        denom = term1_denom + term2_denom + term3_denom + term4_denom
+        denom *= eta * I0**2 / (4 * np.pi)
     
     # Alpha calculation
     alpha = np.cos(theta) - beta / k
     
     # Numerator terms
-    term1_num = 2  # Constant term in the numerator
+    term1_num = 0.5 * np.pi * eta * I0**2  # Constant term in the numerator
     term2_num = np.sin(theta)**2  # Depends on theta
     term3_num = (np.sin(k * h * alpha)**2) / ((alpha + 1e-20)**2)  # Depends on alpha
     
@@ -126,6 +133,28 @@ def getE(k, h, beta, theta, I0=1, eta=120*np.pi):
 
     return E
 
+# Calculate Prad using the summation method given my Mikael Dich (Oct 1997)    
+def getPradSum(wavenumber, h, beta, I0=1, eta=120*np.pi):
+    wavelength = 2*np.pi/wavenumber
+    N = int(2*np.pi*h/wavelength) + 10
+    K = (2*N + 1)
+    L = (4*N + 1)
+    #print(f'K={K}, L={L}, N={N}')
+    
+    eps = lambda i: 1 if i == 0 else 2 
+    
+    kPartialSum = 0
+    for k in range(0, K+1): # Starts at 0, ends at K
+        lPartialSum = 0
+        for l in range(0,L): # Starts at 0, ends at L-1
+            lPartialSum += getU2(wavenumber, h, beta, np.pi*k/K, I0, eta)
+        iPartialSum = 0
+        for i in range(0, int(K/2)+1): # Starts at 0, ends at K/2
+            iPartialSum += eps(i) * (2 * np.cos(2*np.pi*i*k/K))/(1 - 4*i**2)
+        kPartialSum += lPartialSum * iPartialSum * eps(k) * eps(K - k)
+            
+    return kPartialSum * np.pi / ( 2 * K * L)
+
 # Check to see if Prad and 4piUavg are the same
 def comparePradWithUavg(k, beta):
     I0 = 1
@@ -157,7 +186,7 @@ def comparePradWithUavg(k, beta):
     plt.plot(L/(2*np.pi/k), 4*np.pi*np.array(Uavg), label='$4\pi$Uavg')  # Ensure Uavg is a NumPy array for multiplication
     plt.xlabel('$L/\lambda$')
     plt.ylabel('Prad and $4\pi$Uavg')
-    plt.title('Prad and $4\pi$Uavg as a function of $L/\lambda$')
+    plt.title(f'Prad and $4\pi$Uavg as a function of $L/\lambda$ when $\\beta/k = {beta/k}$')
     plt.grid(True)
     plt.legend()
     plt.show()
@@ -200,11 +229,12 @@ def plot_antenna_characteristics(k, h, beta):
     plot_characteristics(axs[2], theta, U_dB, 'Radiation Intensity (Analytical) in dB')
     plot_characteristics(axs[3], theta, U2_dB, 'Radiation Intensity (From E field) in dB')
     plot_characteristics(axs[4], theta, E_dB, 'Magnitude of E in dB')
-      
+
 
     plt.tight_layout()
     plt.show()
 
+# Plot the characteristics of the antenna on a polar plot
 def plot_characteristics(ax, theta, values, title):
     ax.plot(theta, values, label=title.split(' ')[0])
     ax.set_title(title)
@@ -216,41 +246,61 @@ def plot_characteristics(ax, theta, values, title):
 def plotIntegral():
     # Parameters for plotting
     b_values = [0, 0.5, 1]  # Example b values
-    kh_range = np.linspace(0, 20, 20)  # kh range
+    kh_range = np.linspace(0, 20, 50)  # kh range
 
-    plt.figure(figsize=(10, 7))
+    fig, axs = plt.subplots(2, 1, figsize=(10, 14))
     count = 0
     maxCount = len(b_values) * len(kh_range)
+    h = 1
 
     for b in b_values:
         y_values = []
+        pradSum_values = []
         for kh in kh_range:
             result = integral_y(kh, b)
             y_values.append(result)
+            pradSum_values.append(getPradSum(kh/h, h, b))
             percentDone = count / maxCount * 100
             count += 1
             print(f'kh: {kh}, b: {b}, result: {result}, Progress: {percentDone:.2f}%')
-        #y_values = [integral_y(kh, b) for kh in kh_range]
-        plt.plot(kh_range, y_values, label=f'Numerical Solution, b/k={b}')
+        axs[0].plot(kh_range, y_values, label=f'Numerical Integration For Prad, b/k={b}')
+        axs[0].plot(kh_range, pradSum_values, label=f'Prad From Sum, b/k={b}')
+        axs[1].plot(kh_range, 10*np.log10(np.abs((np.array(y_values) - np.array(pradSum_values)) / np.array(y_values))), label=f'Difference, b/k={b}')
 
+    # Define eta and I0, this is bad practice and can cause problems later
+    eta = 120 * np.pi
+    I0 = 1
+    
+    # Analytical Solution for b/k=1
     y2 = 1.415 + np.log(2 * kh_range / np.pi) - special.sici(4 * kh_range)[1] + np.sin(4 * kh_range) / (4 * kh_range + 1e-20)
-    plt.plot(kh_range, y2, label='Analytical Solution')
-    plt.xlabel('kh')
-    plt.ylabel('Integral Value')
-    plt.title('Plot of the Integral vs. kh')
-    plt.legend()
-    plt.grid(True)
+    y2 = y2 * eta * I0**2 / (4 * np.pi)
+    
+    axs[0].plot(kh_range, y2, label='Analytical Prad Solution for $\\beta/k$=1')
+    axs[0].set_xlabel('kh')
+    axs[0].set_ylabel('Integral Value')
+    axs[0].set_title('Plot of the Integral vs. kh')
+    axs[0].legend()
+    axs[0].grid(True)
+
+    axs[1].set_xlabel('kh')
+    axs[1].set_ylabel('Difference (dB)')
+    axs[1].set_title('Plot of the Difference vs. kh')
+    axs[1].legend()
+    axs[1].grid(True)
+    axs[1].set_ylim(-5, 20)
+
+    plt.tight_layout()
     plt.show()
 
 # (Equivalent?) Numerical Integral (to compare with Prad)
 def integrand(theta, kh, bk):
-    return (np.sin(theta)**2) * (np.sin(kh * (np.cos(theta) - bk))**2) / ((np.cos(theta) - bk)**2 + 1e-24)
+    return (np.sin(theta)**3) * (np.sin(kh * (np.cos(theta) - bk))**2) / ((np.cos(theta) - bk)**2 + 1e-24)
 
 # Function with gaussian quadrature to integrate the integrand
 def integral_y(kh, bk):
-    # Using Gaussian quadrature to integrate the integrand
-    # result, _ = quad(integrand, 0, np.pi, args=(kh, bk), epsabs=1e-20, epsrel=1e-20)
-    # return result
+    #Using Gaussian quadrature to integrate the integrand
+    result, _ = quad(integrand, 0, np.pi, args=(kh, bk), epsabs=1e-20, epsrel=1e-20)
+    return result
 
     # # Using Simpson's rule to integrate the integrand
     # x = np.linspace(0, np.pi, 100000)  # define x-values
@@ -258,30 +308,29 @@ def integral_y(kh, bk):
     # result = simpson(y, x)  # apply Simpson's rule
     # return result
 
-    x = np.linspace(0, np.pi, 100000001)  # define x-values
-    y = integrand(x, kh, bk)  # compute y-values
+    # x = np.linspace(0, np.pi, 10001)  # define x-values
+    # y = integrand(x, kh, bk)  # compute y-values
 
-    # Break up x and y into 1000 partitions
-    x_partitions = np.array_split(x, 10000)
-    y_partitions = np.array_split(y, 10000)
+    # # Break up x and y into 1000 partitions
+    # x_partitions = np.array_split(x, 1000)
+    # y_partitions = np.array_split(y, 1000)
 
-    partialSum = 0
-    loopCount = 0
+    # partialSum = 0
+    # loopCount = 0
 
-    # Integrate each partition and sum the results
-    for y_part, x_part in zip(y_partitions, x_partitions):
-        result = simpson(y_part, x_part)
-        partialSum += result
-        #print(f'Loop: {loopCount}, result: {result}')
-        loopCount += 1
-    #result = (simpson(y_part, x_part) for y_part, x_part in zip(y_partitions, x_partitions))
-    return partialSum
-
+    # # Integrate each partition and sum the results
+    # for y_part, x_part in zip(y_partitions, x_partitions):
+    #     result = simpson(y_part, x_part)
+    #     partialSum += result
+    #     #print(f'Loop: {loopCount}, result: {result}')
+    #     loopCount += 1
+    # #result = (simpson(y_part, x_part) for y_part, x_part in zip(y_partitions, x_partitions))
+    # return partialSum
 
 
 plotIntegral()
 
-comparePradWithUavg(k, 0)
+comparePradWithUavg(k, 0.99*k)
 
 plot_antenna_characteristics(k, 1*wavelength, 0)
 
@@ -421,7 +470,7 @@ for L in L_values:
         # maxUIndex = np.argmax(U)
         # maxTheta = theta[maxUIndex] * 180 / np.pi  # Convert to degrees
 
-        D = getD2(k=k, h=L/2, beta=beta0, theta=theta)
+        D = getD(k=k, h=L/2, beta=beta0, theta=theta)
         D0 = np.max(D)
         maxIndex = np.argmax(D)
         maxTheta = theta[maxIndex] * 180 / np.pi
