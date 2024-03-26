@@ -80,8 +80,8 @@ def plotDmaxOverAntennaSize(Lmin=0, Lmax=20, wavelength=wavelength, betaNorm=[0]
             thetaMaxIdx = np.argmax(D)
             thetaMax[i] = theta[thetaMaxIdx]*180/np.pi
             loopCounter += 1
-        axs[0].plot(L/wavelength, 10*np.log10(Dmax), color=color, label=f'$\\beta/k$={beta0/k}')
-        axs[1].plot(L/wavelength, thetaMax, color=color, label=f'$\\beta/k$={beta0/k}')
+        axs[0].plot(L/wavelength, 10*np.log10(Dmax), color=color, label=f'$\\beta/k$={beta0/k:.2f}')
+        axs[1].plot(L/wavelength, thetaMax, color=color, label=f'$\\beta/k$={beta0/k:.2f}')
     
     axs[0].set_xlabel('$\\frac{L}{\lambda}$')
     axs[0].set_ylabel('Max Directivity (dBi)')
@@ -92,8 +92,9 @@ def plotDmaxOverAntennaSize(Lmin=0, Lmax=20, wavelength=wavelength, betaNorm=[0]
     axs[1].set_xlabel('$\\frac{L}{\lambda}$')
     axs[1].set_ylabel('$\\theta_{max}$ $(\degree)$')
     axs[1].set_title('$\\theta_{max}$ vs Electrical Length of a Traveling Wave Antenna')
-    axs[1].legend()
+    axs[1].legend(loc='lower right')
     axs[1].grid()
+    
 
     plt.tight_layout()
     plt.show()
@@ -102,13 +103,14 @@ def plotDmaxOverAntennaSize(Lmin=0, Lmax=20, wavelength=wavelength, betaNorm=[0]
 def plotUPatternOverAntennaSize(theta, k=k, h=[1*wavelength], beta=0, I0=1, eta=120*np.pi):
     wavelength = 2*np.pi/k
     plt.figure()
+    colors = plt.cm.rainbow((np.linspace(0, 1, len(h))))
     # Loop through L0 and plot U for all the L0 values
-    for h0 in h:
+    for h0, colour in zip(h, colors):
         # Radiation Intensity for the antenna
         U = getU(k, h0, beta, theta, I0, eta)
         U = U/np.max(U)
         # Plotting the radiation intensity
-        plt.plot(theta*180/np.pi, 10*np.log10(U), label=f'$L/\lambda={2*h0/wavelength} $')
+        plt.plot(theta*180/np.pi, 10*np.log10(U), label=f'$L/\lambda={2*h0/wavelength} $', color=colour, linewidth=2)
     plt.legend()
     plt.xlabel(f'$\\theta$')
     plt.ylabel('Normalized Radiation Intensity (dBi)')
@@ -159,10 +161,10 @@ def scanTheBeamAndPlotDmax(k=k, h=[1*wavelength], beta=[0*k], I0=1, eta=120*np.p
     plt.show()
 
 # Part C
-plotDmaxOverAntennaSize(Lmin=0, Lmax=20, wavelength=wavelength, betaNorm=np.linspace(0,1,9), I0=1, eta=120*np.pi)
+# plotDmaxOverAntennaSize(Lmin=0.01, Lmax=20, wavelength=wavelength, betaNorm=np.linspace(0,1,20), I0=1, eta=120*np.pi)
 
 # Part D
-# plotUPatternOverAntennaSize(theta=np.linspace(0, np.pi, 1000), k=k, h=[2.5*wavelength, 5*wavelength, 10*wavelength, 20*wavelength], beta=0.0*k, I0=1, eta=120*np.pi)
+plotUPatternOverAntennaSize(theta=np.linspace(0, np.pi, 1000), k=k, h=[2.5*wavelength, 5*wavelength, 10*wavelength, 20*wavelength, 40*wavelength], beta=0.0*k, I0=1, eta=120*np.pi)
 
 # Part F
 #scanTheBeamAndPlotDmax(k=k, h=np.linspace(3*wavelength, 10*wavelength, 11), beta=np.linspace(0, 1*k, 100), I0=1, eta=120*np.pi)
