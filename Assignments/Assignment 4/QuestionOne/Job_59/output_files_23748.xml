@@ -1,0 +1,17 @@
+<OutputFiles>
+ <File Format="Text" Path="Job_59.tci" Type="tci" Object="unknown" Hash="63a3992eb4c2d010cbc185e77bf3656c"/>
+ <File Format="Text" Path="Job_59.tor" Type="tor" Object="unknown" Hash="4b7501e4277aa37081506e57634e09a3"/>
+ <File Format="Text" Path="Job_59.out" Type="out" Object="unknown" Hash="96d2d135d47887cd3a2ca5cc424fdf37"/>
+ <File Format="Ticra" Path="single_cut.cut" Type="Cut:Spherical" Object="single_cut" Hash="66b7e9f050256a8775eb7d7324467911">
+  <Parameter Values=" 20.0000000000000" Unit="GHz" Name="Frequency"/>
+  <Parameter Values="[0.000000000000000E+000;90.0000000000000;3]" Unit="deg" Name="Phi"/>
+  <Parameter Values="[-7.15701779967802;7.15701779967802;161]" Unit="deg" Name="Theta"/>
+ </File>
+ <File Format="Ticra" Path="spherical_grid.grd" Type="Grid:Spherical" Object="spherical_grid" Hash="9a909bbd465c0eec6d4dbfb8696fe699">
+  <Parameter Values=" 20.0000000000000" Unit="GHz" Name="Frequency"/>
+  <Parameter Values="[-0.200000000000000;0.200000000000000;201]" Unit="" Name="V"/>
+  <Parameter Values="[-0.200000000000000;0.200000000000000;201]" Unit="" Name="U"/>
+ </File>
+ <File Format="Text" Path="comments.txt" Type="Comments"/>
+ <File Format="Text" Path="screenoutput.txt" Type="Screen"/>
+</OutputFiles>

@@ -1,0 +1,47 @@
+ Tci file: Job_29.tci
+ Out file: Job_29.out
+ Log file: Job_29.log
+ 
+ 
+ GRASP-SE version 10.3.0 (Windows ia32/x86 32-bit)
+ 
+ 
+ GRASP-SE found  32 CPU cores
+ (Student edition limited to 1 CPU core)
+ 
+ ----- TASK No. 1 -----     Started at 14:34:33 on April 13, 2024
+ 
+ single_po get_currents ( source : sequence(ref(single_feed)))
+ 
+  PO1 =   14  PO2 =   45  Face =    1, Final PO-values from auto-convergence 
+  PTD =   43              Edge =    1, Final PTD-value from auto-convergence. 
+ 
+  Calculating currents.
+  No. of PO-points (target):                452                               
+  No. of PTD points (target):                43 
+ 
+  Relative power hitting scatterer:    0.954115
+  Spill-over:     0.2040 dB
+ Total task time:  2.15 sec
+ 
+ ----- TASK No. 2 -----     Started at 14:34:36 on April 13, 2024
+ 
+ single_cut get_field ( source : sequence(ref(single_po), ref(single_feed)))
+ 
+  No. of field points:                      483 
+  No. of PO points (source):                452 
+  No. of PTD points (source):                43 
+ Total task time:  0.00 sec
+ 
+ ----- TASK No. 3 -----     Started at 14:34:36 on April 13, 2024
+ 
+ spherical_grid get_field ( source : sequence(ref(single_feed), ref(single_po)))
+ 
+  No. of field points:                    40401 
+  No. of PO points (source):                452 
+  No. of PTD points (source):                43 
+ Total task time:  0.92 sec
+ 
+ ----- END OF TASKS -----     Completed at 14:34:37 on April 13, 2024
+ 
+ Total time was 3.12 sec

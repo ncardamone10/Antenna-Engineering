@@ -1,0 +1,107 @@
+single_global_coor  coor_sys  
+(
+)
+ 
+single_frequencies  frequency  
+(
+  frequency_list   : sequence(20.0 GHz)
+)
+ 
+single_surface  paraboloid  
+(
+  focal_length     : 1.2 m
+)
+ 
+single_rim  elliptical_rim  
+(
+  half_axis        : struct(x: 0.3 m, y: 0.3 m)
+)
+ 
+single_reflector  reflector  
+(
+  coor_sys         : ref(single_global_coor),
+  surface          : ref(single_surface),
+  rim              : ref(single_rim)
+)
+ 
+single_feed_coor  coor_sys  
+(
+  origin           : struct(x: 0.0 m, y: 0.0 m, z: 0.24 m),
+  y_axis           : struct(x: 0.0, y: -1.0, z: 0.0),
+  base             : ref(single_global_coor)
+)
+ 
+single_feed  gaussian_beam_pattern  
+(
+  frequency        : ref(single_frequencies),
+  coor_sys         : ref(single_feed_coor),
+  taper_angle      : 64.0107669601508,
+  taper            : "ref(feedTaper)",
+  polarisation     : linear_y
+)
+ 
+single_cut_coor  coor_sys  
+(
+  base             : ref(single_global_coor)
+)
+ 
+single_cut  spherical_cut  
+(
+  coor_sys         : ref(single_cut_coor),
+  theta_range      : struct(start: -7.15701779967802, end: 7.15701779967802, np: 161),
+  phi_range        : struct(start: 0.0, end: 90.0, np: 3),
+  file_name        : "",
+  comment          : "Field data in cuts"
+)
+ 
+single_po  po_single_face_scatterer  
+(
+  frequency        : ref(single_frequencies),
+  scatterer        : ref(single_reflector)
+)
+ 
+spherical_grid  spherical_grid  
+(
+  coor_sys         : ref(single_cut_coor),
+  x_range          : struct(start: -0.2, end: 0.2, np: 201),
+  y_range          : struct(start: -0.2, end: 0.2, np: 201),
+  file_name        : "",
+  comment          : ""
+)
+ 
+feedTaper  real_variable  
+(
+  value            : -20.0
+)
+ 
+dishDepthRatio  real_variable  
+(
+  value            : 2.0
+)
+ 
+//DO NOT MODIFY OBJECTS BELOW THIS LINE.
+//THESE OBJECTS ARE CREATED AND MANAGED BY THE
+//GRAPHICAL USER INTERFACE AND SHOULD NOT BE
+//MODIFIED MANUALLY!
+view_1  view  
+(
+  objects          : sequence(ref(view_1_coor_sys_plot),ref(view_1_reflector_plot),ref(view_1_feed_plot),
+ref(view_1_output_points_plot))
+)
+ 
+view_1_coor_sys_plot  coor_sys_plot  
+(
+)
+ 
+view_1_reflector_plot  reflector_plot  
+(
+)
+ 
+view_1_feed_plot  feed_plot  
+(
+)
+ 
+view_1_output_points_plot  output_points_plot  
+(
+)
+ 

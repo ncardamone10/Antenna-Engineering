@@ -1,0 +1,63 @@
+ Tci file: Job_07.tci
+ Out file: Job_07.out
+ Log file: Job_07.log
+ 
+ 
+ GRASP-SE version 10.3.0 (Windows ia32/x86 32-bit)
+ 
+ 
+ GRASP-SE found  32 CPU cores
+ (Student edition limited to 1 CPU core)
+ 
+ ----- TASK No. 1 -----     Started at 23:04:27 on April 13, 2024
+ 
+ single_po get_currents ( source : sequence(ref(single_feed)))
+ 
+  PO1 =   24  PO2 =   53  Face =    1, Final PO-values from auto-convergence 
+  PTD =   42              Edge =    1, Final PTD-value from auto-convergence. 
+  PTD =   12              Edge =    2, Final PTD-value from auto-convergence. 
+  PTD =   42              Edge =    3, Final PTD-value from auto-convergence. 
+  PTD =   12              Edge =    4, Final PTD-value from auto-convergence. 
+ 
+  Calculating currents.
+  No. of PO-points (target):               1272                               
+  No. of edges with PTD (target):             4 
+    PTD points at edge 1:                    42 
+    PTD points at edge 2:                    12 
+    PTD points at edge 3:                    42 
+    PTD points at edge 4:                    12 
+ 
+  Relative power hitting scatterer:    0.737367
+  Spill-over:     1.3232 dB
+ Total task time:  0.55 sec
+ 
+ ----- TASK No. 2 -----     Started at 23:04:27 on April 13, 2024
+ 
+ single_cut get_field ( source : sequence(ref(single_po), ref(single_feed)))
+ 
+  No. of field points:                      483 
+  No. of PO points (source):               1272 
+  No. of edges with PTD (source):             4 
+    PTD-points at edge 1:                    42 
+    PTD-points at edge 2:                    12 
+    PTD-points at edge 3:                    42 
+    PTD-points at edge 4:                    12 
+ Total task time:  0.03 sec
+ 
+ ----- TASK No. 3 -----     Started at 23:04:27 on April 13, 2024
+ 
+ spherical_grid get_field ( source : sequence(ref(single_po), ref(single_feed)))
+ 
+  No. of field points:                    40401 
+  No. of PO points (source):               1272 
+  No. of edges with PTD (source):             4 
+    PTD-points at edge 1:                    42 
+    PTD-points at edge 2:                    12 
+    PTD-points at edge 3:                    42 
+    PTD-points at edge 4:                    12                      
+                                                                     
+ Total task time:  2.29 sec
+ 
+ ----- END OF TASKS -----     Completed at 23:04:30 on April 13, 2024
+ 
+ Total time was 2.90 sec

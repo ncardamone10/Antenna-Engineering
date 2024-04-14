@@ -1,0 +1,498 @@
+[Comment]
+Project comment
+[TOR file]
+working/QuestionThree.tor
+[Auxiliary TOR files]
+[TCI file]
+working/QuestionThree.tci
+[Default units]
+GHz m S/m 1
+[Project setup]
+<!DOCTYPE Project>
+<Project version="10.3.0" application="GRASP">
+ <Results>
+  <Analysis Path="Job_01" Name="Job_01">
+   <Objects Path="Job_01.tor"/>
+   <Commands Path="Job_01.tci"/>
+   <Output Path="output_files_37608.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:28:37" JobProcessID="37608" JobOutputSpec="output_files_37608.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_01"/>
+  </Analysis>
+  <Analysis Path="Job_02" Name="Job_02">
+   <Objects Path="Job_02.tor"/>
+   <Commands Path="Job_02.tci"/>
+   <Output Path="output_files_11664.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:32:46" JobProcessID="11664" JobOutputSpec="output_files_11664.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_02"/>
+  </Analysis>
+  <Analysis Path="Job_03" Name="Job_03">
+   <Objects Path="Job_03.tor"/>
+   <Commands Path="Job_03.tci"/>
+   <Output Path="output_files_18348.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:34:24" JobProcessID="18348" JobOutputSpec="output_files_18348.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_03"/>
+  </Analysis>
+  <Analysis Path="Job_04" Name="Job_04">
+   <Objects Path="Job_04.tor"/>
+   <Commands Path="Job_04.tci"/>
+   <Output Path="output_files_38652.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:35:48" JobProcessID="38652" JobOutputSpec="output_files_38652.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_04"/>
+  </Analysis>
+  <Analysis Path="Job_05" Name="Job_05">
+   <Objects Path="Job_05.tor"/>
+   <Commands Path="Job_05.tci"/>
+   <Output Path="output_files_17356.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:37:47" JobProcessID="17356" JobOutputSpec="output_files_17356.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_05"/>
+  </Analysis>
+  <Analysis Path="Job_06" Name="Job_06">
+   <Objects Path="Job_06.tor"/>
+   <Commands Path="Job_06.tci"/>
+   <Output Path="output_files_34632.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:38:29" JobProcessID="34632" JobOutputSpec="output_files_34632.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_06"/>
+  </Analysis>
+  <Analysis Path="Job_07" Name="Job_07">
+   <Objects Path="Job_07.tor"/>
+   <Commands Path="Job_07.tci"/>
+   <Output Path="output_files_23692.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:46:25" JobProcessID="23692" JobOutputSpec="output_files_23692.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_07"/>
+  </Analysis>
+  <Analysis Path="Job_08" Name="Job_08">
+   <Objects Path="Job_08.tor"/>
+   <Commands Path="Job_08.tci"/>
+   <Output Path="output_files_7664.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:46:36" JobProcessID="7664" JobOutputSpec="output_files_7664.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_08"/>
+  </Analysis>
+  <Analysis Path="Job_09" Name="Job_09">
+   <Objects Path="Job_09.tor"/>
+   <Commands Path="Job_09.tci"/>
+   <Output Path="output_files_36556.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:46:47" JobProcessID="36556" JobOutputSpec="output_files_36556.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_09"/>
+  </Analysis>
+  <Analysis Path="Job_10" Name="Job_10">
+   <Objects Path="Job_10.tor"/>
+   <Commands Path="Job_10.tci"/>
+   <Output Path="output_files_35288.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:46:55" JobProcessID="35288" JobOutputSpec="output_files_35288.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_10"/>
+  </Analysis>
+  <Analysis Path="Job_11" Name="Job_11">
+   <Objects Path="Job_11.tor"/>
+   <Commands Path="Job_11.tci"/>
+   <Output Path="output_files_32532.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:47:02" JobProcessID="32532" JobOutputSpec="output_files_32532.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_11"/>
+  </Analysis>
+  <Analysis Path="Job_12" Name="Job_12">
+   <Objects Path="Job_12.tor"/>
+   <Commands Path="Job_12.tci"/>
+   <Output Path="output_files_35824.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:47:09" JobProcessID="35824" JobOutputSpec="output_files_35824.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_12"/>
+  </Analysis>
+  <Analysis Path="Job_13" Name="Job_13">
+   <Objects Path="Job_13.tor"/>
+   <Commands Path="Job_13.tci"/>
+   <Output Path="output_files_20712.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:47:16" JobProcessID="20712" JobOutputSpec="output_files_20712.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_13"/>
+  </Analysis>
+  <Analysis Path="Job_14" Name="Job_14">
+   <Objects Path="Job_14.tor"/>
+   <Commands Path="Job_14.tci"/>
+   <Output Path="output_files_28176.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:47:23" JobProcessID="28176" JobOutputSpec="output_files_28176.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_14"/>
+  </Analysis>
+  <Analysis Path="Job_15" Name="Job_15">
+   <Objects Path="Job_15.tor"/>
+   <Commands Path="Job_15.tci"/>
+   <Output Path="output_files_24472.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:47:31" JobProcessID="24472" JobOutputSpec="output_files_24472.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_15"/>
+  </Analysis>
+  <Analysis Path="Job_16" Name="Job_16">
+   <Objects Path="Job_16.tor"/>
+   <Commands Path="Job_16.tci"/>
+   <Output Path="output_files_32248.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:47:39" JobProcessID="32248" JobOutputSpec="output_files_32248.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_16"/>
+  </Analysis>
+  <Analysis Path="Job_17" Name="Job_17">
+   <Objects Path="Job_17.tor"/>
+   <Commands Path="Job_17.tci"/>
+   <Output Path="output_files_21976.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:47:50" JobProcessID="21976" JobOutputSpec="output_files_21976.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_17"/>
+  </Analysis>
+  <Analysis Path="Job_18" Name="Job_18">
+   <Objects Path="Job_18.tor"/>
+   <Commands Path="Job_18.tci"/>
+   <Output Path="output_files_18336.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:00" JobProcessID="18336" JobOutputSpec="output_files_18336.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_18"/>
+  </Analysis>
+  <Analysis Path="Job_19" Name="Job_19">
+   <Objects Path="Job_19.tor"/>
+   <Commands Path="Job_19.tci"/>
+   <Output Path="output_files_23576.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:08" JobProcessID="23576" JobOutputSpec="output_files_23576.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_19"/>
+  </Analysis>
+  <Analysis Path="Job_20" Name="Job_20">
+   <Objects Path="Job_20.tor"/>
+   <Commands Path="Job_20.tci"/>
+   <Output Path="output_files_19856.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:17" JobProcessID="19856" JobOutputSpec="output_files_19856.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_20"/>
+  </Analysis>
+  <Analysis Path="Job_21" Name="Job_21">
+   <Objects Path="Job_21.tor"/>
+   <Commands Path="Job_21.tci"/>
+   <Output Path="output_files_36520.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:26" JobProcessID="36520" JobOutputSpec="output_files_36520.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_21"/>
+  </Analysis>
+  <Analysis Path="Job_22" Name="Job_22">
+   <Objects Path="Job_22.tor"/>
+   <Commands Path="Job_22.tci"/>
+   <Output Path="output_files_22932.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:34" JobProcessID="22932" JobOutputSpec="output_files_22932.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_22"/>
+  </Analysis>
+  <Analysis Path="Job_23" Name="Job_23">
+   <Objects Path="Job_23.tor"/>
+   <Commands Path="Job_23.tci"/>
+   <Output Path="output_files_38240.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:41" JobProcessID="38240" JobOutputSpec="output_files_38240.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_23"/>
+  </Analysis>
+  <Analysis Path="Job_24" Name="Job_24">
+   <Objects Path="Job_24.tor"/>
+   <Commands Path="Job_24.tci"/>
+   <Output Path="output_files_11688.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:47" JobProcessID="11688" JobOutputSpec="output_files_11688.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_24"/>
+  </Analysis>
+  <Analysis Path="Job_25" Name="Job_25">
+   <Objects Path="Job_25.tor"/>
+   <Commands Path="Job_25.tci"/>
+   <Output Path="output_files_13380.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:48:55" JobProcessID="13380" JobOutputSpec="output_files_13380.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_25"/>
+  </Analysis>
+  <Analysis Path="Job_26" Name="Job_26">
+   <Objects Path="Job_26.tor"/>
+   <Commands Path="Job_26.tci"/>
+   <Output Path="output_files_35496.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:01" JobProcessID="35496" JobOutputSpec="output_files_35496.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_26"/>
+  </Analysis>
+  <Analysis Path="Job_27" Name="Job_27">
+   <Objects Path="Job_27.tor"/>
+   <Commands Path="Job_27.tci"/>
+   <Output Path="output_files_18124.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:09" JobProcessID="18124" JobOutputSpec="output_files_18124.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_27"/>
+  </Analysis>
+  <Analysis Path="Job_28" Name="Job_28">
+   <Objects Path="Job_28.tor"/>
+   <Commands Path="Job_28.tci"/>
+   <Output Path="output_files_34144.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:17" JobProcessID="34144" JobOutputSpec="output_files_34144.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_28"/>
+  </Analysis>
+  <Analysis Path="Job_29" Name="Job_29">
+   <Objects Path="Job_29.tor"/>
+   <Commands Path="Job_29.tci"/>
+   <Output Path="output_files_8992.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:25" JobProcessID="8992" JobOutputSpec="output_files_8992.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_29"/>
+  </Analysis>
+  <Analysis Path="Job_30" Name="Job_30">
+   <Objects Path="Job_30.tor"/>
+   <Commands Path="Job_30.tci"/>
+   <Output Path="output_files_7860.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:34" JobProcessID="7860" JobOutputSpec="output_files_7860.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_30"/>
+  </Analysis>
+  <Analysis Path="Job_31" Name="Job_31">
+   <Objects Path="Job_31.tor"/>
+   <Commands Path="Job_31.tci"/>
+   <Output Path="output_files_6764.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:43" JobProcessID="6764" JobOutputSpec="output_files_6764.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_31"/>
+  </Analysis>
+  <Analysis Path="Job_32" Name="Job_32">
+   <Objects Path="Job_32.tor"/>
+   <Commands Path="Job_32.tci"/>
+   <Output Path="output_files_35412.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:50" JobProcessID="35412" JobOutputSpec="output_files_35412.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_32"/>
+  </Analysis>
+  <Analysis Path="Job_33" Name="Job_33">
+   <Objects Path="Job_33.tor"/>
+   <Commands Path="Job_33.tci"/>
+   <Output Path="output_files_37408.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:49:56" JobProcessID="37408" JobOutputSpec="output_files_37408.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_33"/>
+  </Analysis>
+  <Analysis Path="Job_34" Name="Job_34">
+   <Objects Path="Job_34.tor"/>
+   <Commands Path="Job_34.tci"/>
+   <Output Path="output_files_34384.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:03" JobProcessID="34384" JobOutputSpec="output_files_34384.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_34"/>
+  </Analysis>
+  <Analysis Path="Job_35" Name="Job_35">
+   <Objects Path="Job_35.tor"/>
+   <Commands Path="Job_35.tci"/>
+   <Output Path="output_files_35980.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:12" JobProcessID="35980" JobOutputSpec="output_files_35980.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_35"/>
+  </Analysis>
+  <Analysis Path="Job_36" Name="Job_36">
+   <Objects Path="Job_36.tor"/>
+   <Commands Path="Job_36.tci"/>
+   <Output Path="output_files_31972.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:19" JobProcessID="31972" JobOutputSpec="output_files_31972.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_36"/>
+  </Analysis>
+  <Analysis Path="Job_37" Name="Job_37">
+   <Objects Path="Job_37.tor"/>
+   <Commands Path="Job_37.tci"/>
+   <Output Path="output_files_512.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:26" JobProcessID="512" JobOutputSpec="output_files_512.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_37"/>
+  </Analysis>
+  <Analysis Path="Job_38" Name="Job_38">
+   <Objects Path="Job_38.tor"/>
+   <Commands Path="Job_38.tci"/>
+   <Output Path="output_files_516.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:34" JobProcessID="516" JobOutputSpec="output_files_516.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_38"/>
+  </Analysis>
+  <Analysis Path="Job_39" Name="Job_39">
+   <Objects Path="Job_39.tor"/>
+   <Commands Path="Job_39.tci"/>
+   <Output Path="output_files_26520.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:40" JobProcessID="26520" JobOutputSpec="output_files_26520.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_39"/>
+  </Analysis>
+  <Analysis Path="Job_40" Name="Job_40">
+   <Objects Path="Job_40.tor"/>
+   <Commands Path="Job_40.tci"/>
+   <Output Path="output_files_20712.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:47" JobProcessID="20712" JobOutputSpec="output_files_20712.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_40"/>
+  </Analysis>
+  <Analysis Path="Job_41" Name="Job_41">
+   <Objects Path="Job_41.tor"/>
+   <Commands Path="Job_41.tci"/>
+   <Output Path="output_files_32352.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:50:54" JobProcessID="32352" JobOutputSpec="output_files_32352.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_41"/>
+  </Analysis>
+  <Analysis Path="Job_42" Name="Job_42">
+   <Objects Path="Job_42.tor"/>
+   <Commands Path="Job_42.tci"/>
+   <Output Path="output_files_38316.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:01" JobProcessID="38316" JobOutputSpec="output_files_38316.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_42"/>
+  </Analysis>
+  <Analysis Path="Job_43" Name="Job_43">
+   <Objects Path="Job_43.tor"/>
+   <Commands Path="Job_43.tci"/>
+   <Output Path="output_files_10512.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:08" JobProcessID="10512" JobOutputSpec="output_files_10512.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_43"/>
+  </Analysis>
+  <Analysis Path="Job_44" Name="Job_44">
+   <Objects Path="Job_44.tor"/>
+   <Commands Path="Job_44.tci"/>
+   <Output Path="output_files_35372.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:15" JobProcessID="35372" JobOutputSpec="output_files_35372.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_44"/>
+  </Analysis>
+  <Analysis Path="Job_45" Name="Job_45">
+   <Objects Path="Job_45.tor"/>
+   <Commands Path="Job_45.tci"/>
+   <Output Path="output_files_19852.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:23" JobProcessID="19852" JobOutputSpec="output_files_19852.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_45"/>
+  </Analysis>
+  <Analysis Path="Job_46" Name="Job_46">
+   <Objects Path="Job_46.tor"/>
+   <Commands Path="Job_46.tci"/>
+   <Output Path="output_files_37012.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:30" JobProcessID="37012" JobOutputSpec="output_files_37012.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_46"/>
+  </Analysis>
+  <Analysis Path="Job_47" Name="Job_47">
+   <Objects Path="Job_47.tor"/>
+   <Commands Path="Job_47.tci"/>
+   <Output Path="output_files_37940.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:40" JobProcessID="37940" JobOutputSpec="output_files_37940.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_47"/>
+  </Analysis>
+  <Analysis Path="Job_48" Name="Job_48">
+   <Objects Path="Job_48.tor"/>
+   <Commands Path="Job_48.tci"/>
+   <Output Path="output_files_23620.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:47" JobProcessID="23620" JobOutputSpec="output_files_23620.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_48"/>
+  </Analysis>
+  <Analysis Path="Job_49" Name="Job_49">
+   <Objects Path="Job_49.tor"/>
+   <Commands Path="Job_49.tci"/>
+   <Output Path="output_files_22472.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:51:54" JobProcessID="22472" JobOutputSpec="output_files_22472.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_49"/>
+  </Analysis>
+  <Analysis Path="Job_50" Name="Job_50">
+   <Objects Path="Job_50.tor"/>
+   <Commands Path="Job_50.tci"/>
+   <Output Path="output_files_2784.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:52:05" JobProcessID="2784" JobOutputSpec="output_files_2784.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_50"/>
+  </Analysis>
+  <Analysis Path="Job_51" Name="Job_51">
+   <Objects Path="Job_51.tor"/>
+   <Commands Path="Job_51.tci"/>
+   <Output Path="output_files_13200.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:52:13" JobProcessID="13200" JobOutputSpec="output_files_13200.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_51"/>
+  </Analysis>
+  <Analysis Path="Job_52" Name="Job_52">
+   <Objects Path="Job_52.tor"/>
+   <Commands Path="Job_52.tci"/>
+   <Output Path="output_files_25136.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:52:20" JobProcessID="25136" JobOutputSpec="output_files_25136.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_52"/>
+  </Analysis>
+  <Analysis Path="Job_53" Name="Job_53">
+   <Objects Path="Job_53.tor"/>
+   <Commands Path="Job_53.tci"/>
+   <Output Path="output_files_10536.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:52:26" JobProcessID="10536" JobOutputSpec="output_files_10536.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_53"/>
+  </Analysis>
+  <Analysis Path="Job_54" Name="Job_54">
+   <Objects Path="Job_54.tor"/>
+   <Commands Path="Job_54.tci"/>
+   <Output Path="output_files_36692.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:52:34" JobProcessID="36692" JobOutputSpec="output_files_36692.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_54"/>
+  </Analysis>
+  <Analysis Path="Job_55" Name="Job_55">
+   <Objects Path="Job_55.tor"/>
+   <Commands Path="Job_55.tci"/>
+   <Output Path="output_files_10948.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:52:41" JobProcessID="10948" JobOutputSpec="output_files_10948.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_55"/>
+  </Analysis>
+  <Analysis Path="Job_56" Name="Job_56">
+   <Objects Path="Job_56.tor"/>
+   <Commands Path="Job_56.tci"/>
+   <Output Path="output_files_34172.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:52:51" JobProcessID="34172" JobOutputSpec="output_files_34172.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_56"/>
+  </Analysis>
+  <Analysis Path="Job_57" Name="Job_57">
+   <Objects Path="Job_57.tor"/>
+   <Commands Path="Job_57.tci"/>
+   <Output Path="output_files_36904.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:53:00" JobProcessID="36904" JobOutputSpec="output_files_36904.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_57"/>
+  </Analysis>
+ </Results>
+ <ResultWindows>
+  <PlotWidget type="Field:RadiationPattern">
+   <Title text="Job_57 → single_cut → Radiation Pattern" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="0" spacing="2" text="Amplitude" tickUnit="0" stepMinor="5" minimum="-96" colorBarWidth="10" appendUnit="1" stepMajor="10" maximum="4" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="dB" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Axis useFixedStep="2" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="2" spacing="2" text="θ" tickUnit="0" stepMinor="5" minimum="-20" colorBarWidth="10" appendUnit="1" stepMajor="45" maximum="20" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="deg" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="3" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Canvas color_r="255" color_a="255" color_b="255" color_g="255"/>
+   <Grid>
+    <Component direction="0" active="2"/>
+    <Component direction="1" active="2"/>
+    <PenMinor width="0" color_r="160" color_a="255" color_b="164" color_g="160" style="3"/>
+    <PenMajor width="0" color_r="192" color_a="255" color_b="192" color_g="192" style="1"/>
+   </Grid>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;350c56bd5b4061fd8b9e62156ef8b88a&quot;>&#xa;  &lt;Parameter Values=&quot; 20.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-20.0000000000000;20.0000000000000;501]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_57/single_cut.cut" time="2024-04-13T21:53:01"/>
+    <Line width="2" color_r="0" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="20.0 GHz → E_co → 0.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="0" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="0" length="0"/>
+    <Parameter class="Theta" begin="0" length="501"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;350c56bd5b4061fd8b9e62156ef8b88a&quot;>&#xa;  &lt;Parameter Values=&quot; 20.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-20.0000000000000;20.0000000000000;501]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_57/single_cut.cut" time="2024-04-13T21:53:01"/>
+    <Line width="2" color_r="255" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="20.0 GHz → E_cx → 0.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="0" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="1" length="0"/>
+    <Parameter class="Theta" begin="0" length="501"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <Legend ratio="0.3" position="1"/>
+  </PlotWidget>
+  <PlotWidget type="Field:RadiationPattern">
+   <Title text="Job_57 → single_cut → Radiation Pattern" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="0" spacing="2" text="Amplitude" tickUnit="0" stepMinor="5" minimum="-88" colorBarWidth="10" appendUnit="1" stepMajor="10" maximum="12" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="dB" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Axis useFixedStep="2" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="2" spacing="2" text="θ" tickUnit="0" stepMinor="5" minimum="-20" colorBarWidth="10" appendUnit="1" stepMajor="45" maximum="20" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="deg" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="3" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Canvas color_r="255" color_a="255" color_b="255" color_g="255"/>
+   <Grid>
+    <Component direction="0" active="2"/>
+    <Component direction="1" active="2"/>
+    <PenMinor width="0" color_r="160" color_a="255" color_b="164" color_g="160" style="3"/>
+    <PenMajor width="0" color_r="192" color_a="255" color_b="192" color_g="192" style="1"/>
+   </Grid>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;350c56bd5b4061fd8b9e62156ef8b88a&quot;>&#xa;  &lt;Parameter Values=&quot; 20.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-20.0000000000000;20.0000000000000;501]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_57/single_cut.cut" time="2024-04-13T21:53:01"/>
+    <Line width="2" color_r="0" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="20.0 GHz → E_co → 45.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="1" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="0" length="0"/>
+    <Parameter class="Theta" begin="0" length="501"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;350c56bd5b4061fd8b9e62156ef8b88a&quot;>&#xa;  &lt;Parameter Values=&quot; 20.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-20.0000000000000;20.0000000000000;501]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_57/single_cut.cut" time="2024-04-13T21:53:01"/>
+    <Line width="2" color_r="255" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="20.0 GHz → E_cx → 45.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="1" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="1" length="0"/>
+    <Parameter class="Theta" begin="0" length="501"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <Legend ratio="0.3" position="1"/>
+  </PlotWidget>
+  <PlotWidget type="Field:RadiationPattern">
+   <Title text="Job_57 → single_cut → Radiation Pattern" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="0" spacing="2" text="Amplitude" tickUnit="0" stepMinor="5" minimum="-60" colorBarWidth="10" appendUnit="1" stepMajor="10" maximum="40" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="dB" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Axis useFixedStep="2" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="2" spacing="2" text="θ" tickUnit="0" stepMinor="5" minimum="-20" colorBarWidth="10" appendUnit="1" stepMajor="45" maximum="20" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="deg" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="3" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Canvas color_r="255" color_a="255" color_b="255" color_g="255"/>
+   <Grid>
+    <Component direction="0" active="2"/>
+    <Component direction="1" active="2"/>
+    <PenMinor width="0" color_r="160" color_a="255" color_b="164" color_g="160" style="3"/>
+    <PenMajor width="0" color_r="192" color_a="255" color_b="192" color_g="192" style="1"/>
+   </Grid>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;350c56bd5b4061fd8b9e62156ef8b88a&quot;>&#xa;  &lt;Parameter Values=&quot; 20.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-20.0000000000000;20.0000000000000;501]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_57/single_cut.cut" time="2024-04-13T21:53:01"/>
+    <Line width="2" color_r="0" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="20.0 GHz → E_co → 90.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="2" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="0" length="0"/>
+    <Parameter class="Theta" begin="0" length="501"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;350c56bd5b4061fd8b9e62156ef8b88a&quot;>&#xa;  &lt;Parameter Values=&quot; 20.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-20.0000000000000;20.0000000000000;501]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_57/single_cut.cut" time="2024-04-13T21:53:01"/>
+    <Line width="2" color_r="255" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="20.0 GHz → E_cx → 90.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="2" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="1" length="0"/>
+    <Parameter class="Theta" begin="0" length="501"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <Legend ratio="0.3" position="1"/>
+  </PlotWidget>
+ </ResultWindows>
+ <WizardData/>
+ <view_configuration>
+  <view pos="0x0" show_surfaces="yes" minimized="no" view_settings_dialog_splitter_state="" enable_psi_slider="no" translation="-0.03447153800876863,0.0276973034114297,-1.283181465090171" name="view_1" perspective_view="no" show_rulers="yes" enable_phi_slider="no" view_settings_dialog_state="" collapsed_view_settings_entries="" disabled_toolbars="" locked_phi_theta="no" rotation="0.441608122877911,0.04570793773637494,0.009655621123748848" size="1454x923" enable_theta_slider="no" visible="yes" maximized="yes" orientation_type="0" show_wire_grid="yes"/>
+ </view_configuration>
+</Project>

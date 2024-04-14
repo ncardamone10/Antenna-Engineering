@@ -1,0 +1,457 @@
+ 
+ 
+                                    G R A S P 9 - S E
+                                    =================
+ 
+  Student edition of General multi-reflector analysis program
+ 
+ GRASP-SE version 10.3.0 (Windows ia32/x86 32-bit)
+ 
+ 
+ GRASP-SE found  32 CPU cores
+ (Student edition limited to 1 CPU core)
+ 
+  Reading tor-file: Job_24.tor
+ 
+ 
+  *** Object name:  single_global_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_global_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  single_frequencies
+  *** Class name :  frequency
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_frequencies
+  *** Class name :  frequency
+  *** Message    :  New values in object
+ 
+  Frequency No.    1  :   0.200000E+02 GHz
+ 
+ 
+  *** Object name:  single_surface
+  *** Class name :  paraboloid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_surface
+  *** Class name :  paraboloid
+  *** Message    :  New values in object
+ 
+ 
+  Focal length     :   0.240000 m
+   and in SI units :   0.240000 meter
+ 
+ 
+  *** Object name:  single_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_rim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :   0.300000 m
+    in y-direction :   0.300000 m
+  and in SI units
+    in x-direction :   0.300000     meter
+    in y-direction :   0.300000     meter
+ 
+  The rim limits in radii are
+    minimum :   0.300000     meter
+    maximum :   0.300000     meter
+ 
+  The rim limits in x direction are
+    minimum :  -0.300000     meter
+    maximum :   0.300000     meter
+ 
+  The rim limits in y direction are
+    minimum :  -0.300000     meter
+    maximum :   0.300000     meter
+ 
+ 
+  *** Object name:  single_reflector
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_reflector
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: single_global_coor
+  Surface: single_surface
+  Rim: single_rim
+ 
+ 
+  *** Object name:  single_feed_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_feed_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Base name : single_global_coor
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  single_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : single_frequencies
+  Coor_sys : single_feed_coor
+ 
+ 
+  *** Object name:  single_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  single_feed
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of gaussian feed
+ 
+ 
+  Taper angle :   64.0108 degrees
+ 
+  Taper compared to on-axis level :  -12.0000 dB
+ 
+  The principal polarisation is : linear_y
+ 
+  The imaginary displacement along the negative z-axis
+    is  0.297970 wavelengths
+ 
+ 
+  *** Object name:  single_cut_coor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_cut_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Base name : single_global_coor
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  single_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_cut
+  *** Class name :  spherical_cut
+  *** Message    :  New values in object
+ 
+  File name :
+  Coor_sys : single_cut_coor
+  Theta range : start  -7.15702    end   7.15702    points   161
+  Phi range : start   0.00000    end  90.00000    points     3
+ 
+ 
+  *** Object name:  single_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  single_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  Frequency : single_frequencies
+  Scatterer : single_reflector
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  New values in object
+ 
+  File name :
+  Coor_sys : single_cut_coor
+  X range : start  -0.20000    end   0.20000    points   201
+  Y range : start  -0.20000    end   0.20000    points   201
+ 
+ 
+  *** Object name:  axialTran
+  *** Class name :  real_variable
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  axialTran
+  *** Class name :  real_variable
+  *** Message    :  New values in object
+ 
+ 
+ 
+  *** Object name:  single_feed_coor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.000000E+00 m     0.000000E+00 m     0.239000E+00 m
+  Z_axis :     0.000000    0.000000   -1.000000
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  New values in object
+ 
+ 
+  Number of objects :      4
+ 
+  Definition of objects   :
+   No.  Name
+     1  view_1_coor_sys_plot
+     2  view_1_reflector_plot
+     3  view_1_feed_plot
+     4  view_1_output_points_plot
+ 
+ 
+ 
+  *** Object name:  view_1_coor_sys_plot
+  *** Class name :  coor_sys_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_coor_sys_plot
+  *** Class name :  coor_sys_plot
+  *** Message    :  Definition of coor_sys_plot
+ 
+ 
+ 
+  *** Object name:  view_1_reflector_plot
+  *** Class name :  reflector_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_reflector_plot
+  *** Class name :  reflector_plot
+  *** Message    :  Definition of reflector_plot
+ 
+ 
+ 
+  *** Object name:  view_1_feed_plot
+  *** Class name :  feed_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_feed_plot
+  *** Class name :  feed_plot
+  *** Message    :  Definition of feed_plot
+ 
+ 
+ 
+  *** Object name:  view_1_output_points_plot
+  *** Class name :  output_points_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_output_points_plot
+  *** Class name :  output_points_plot
+  *** Message    :  Definition of output_points_plot
+ 
+ Program started at 20:57:04 on 13 April 2024
+ 
+ 
+ ----- TASK No. 1 -----     Started at 20:57:04 on April 13, 2024
+ single_po get_currents ( source : sequence(ref(single_feed)))
+ 
+ 
+  *** Object name:  single_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : single_feed
+ 
+ 
+  *** Object name:  single_po
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 1330/3200
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      20/10     10/10       1     1     1       40.74     40.74   -120.16  *
+      20/10     10/10       1     1     2       40.74     40.74    -35.02
+      40/10     20/10       1     1     2       40.74     40.74   -200.02  *
+      15/10     40/10       1     1     2       40.74     40.74    -98.38  *
+      13/10     40/10       1     1     2       40.74     40.74    -67.15
+      14/10     40/10       1     1     2       40.74     40.74    -81.95  *
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2                           [dBi]     [dBi]      [dB]
+      10/20     10/10       1     1     1       40.74     40.74    -14.14
+      10/20     10/10       1     1     2       40.74     40.74    -15.59
+      10/40     10/20       1     1     1       40.74     40.74    -56.09
+      10/40     10/20       1     1     2       40.74     40.74    -20.78
+      10/80     10/40       1     1     1       40.74     40.74   -275.78  *
+      10/80     10/40       1     1     2       40.74     40.74    -55.27
+     10/160     10/80       1     1     2       40.74     40.74   -293.50  *
+      10/60    10/160       1     1     2       40.74     40.74   -216.95  *
+      10/50    10/160       1     1     2       40.74     40.74   -131.47  *
+      10/45    10/160       1     1     2       40.74     40.74    -87.65  *
+      10/43    10/160       1     1     2       40.74     40.74    -76.29
+      10/44    10/160       1     1     2       40.74     40.74    -79.34
+  PO1 =   14  PO2 =   45  Face =    1, Final PO-values from auto-convergence
+ 
+  Edge 1:
+  Max. value: ptd = 3200
+ 
+ PO convergence
+  Test-grid  Ref-grid    Freq  Beam  Grid       P_max   P_level  Accuracy
+        ptd       ptd                           [dBi]     [dBi]      [dB]
+         20        10       1     1     1      -18.27     40.74    -60.91
+         20        10       1     1     2      -22.57     40.74    -63.97
+         40        20       1     1     1      -22.59     40.74    -79.87
+         40        20       1     1     2      -29.13     40.74    -70.19
+         80        40       1     1     1      -22.59     40.74   -283.91  *
+         80        40       1     1     2      -28.61     40.74    -79.21
+        160        80       1     1     2      -28.94     40.74   -351.47  *
+         60       160       1     1     2      -28.94     40.74   -221.39  *
+         50       160       1     1     2      -28.94     40.74   -137.69  *
+         45       160       1     1     2      -28.94     40.74   -104.45  *
+         43       160       1     1     2      -28.94     40.74    -93.79  *
+         42       160       1     1     2      -28.94     40.74    -89.44  *
+  PTD =   43              Edge =    1, Final PTD-value from auto-convergence.
+ 
+  Relative power hitting scatterer:    0.943467
+  Spill-over:     0.2527 dB
+ 
+ ----- TASK No. 2 -----     Started at 20:57:04 on April 13, 2024
+ single_cut get_field ( source : sequence(ref(single_po), ref(single_feed)))
+ 
+ 
+  *** Object name:  single_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Get_field message received
+ 
+  Source : single_po
+  Source : single_feed
+ 
+  Name of currents file: tmp_0000
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 1
+    No. of gaps       : 0
+ 
+  Frequency number  1 :  20.000 GHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        14        45         1
+ 
+    Edge No.     PTD1
+          1        43
+ 
+ 
+ 
+  *** Object name:  single_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ 
+  *** Object name:  single_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 3 -----     Started at 20:57:04 on April 13, 2024
+ spherical_grid get_field ( source : sequence(ref(single_po), ref(single_feed)))
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Get_field message received
+ 
+  Source : single_po
+  Source : single_feed
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- END OF TASKS -----     Completed at 20:57:05 on April 13, 2024
+ Total time was 1.72 sec
+ Program stopped at 20:57:05 on 13 April 2024
+ 

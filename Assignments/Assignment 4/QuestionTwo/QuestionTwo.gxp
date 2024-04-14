@@ -1,0 +1,332 @@
+[Comment]
+Project comment
+[TOR file]
+working/QuestionTwo.tor
+[Auxiliary TOR files]
+[TCI file]
+working/QuestionTwo.tci
+[Default units]
+GHz m S/m 1
+[Project setup]
+<!DOCTYPE Project>
+<Project version="10.3.0" application="GRASP">
+ <Results>
+  <Analysis Path="Job_01" Name="Job_01">
+   <Objects Path="Job_01.tor"/>
+   <Commands Path="Job_01.tci"/>
+   <Output Path="output_files_37604.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:48:11" JobProcessID="37604" JobOutputSpec="output_files_37604.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_01"/>
+  </Analysis>
+  <Analysis Path="Job_02" Name="Job_02">
+   <Objects Path="Job_02.tor"/>
+   <Commands Path="Job_02.tci"/>
+   <Output Path="output_files_9864.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:52:38" JobProcessID="9864" JobOutputSpec="output_files_9864.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_02"/>
+  </Analysis>
+  <Analysis Path="Job_03" Name="Job_03">
+   <Objects Path="Job_03.tor"/>
+   <Commands Path="Job_03.tci"/>
+   <Output Path="output_files_37248.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:52:50" JobProcessID="37248" JobOutputSpec="output_files_37248.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_03"/>
+  </Analysis>
+  <Analysis Path="Job_04" Name="Job_04">
+   <Objects Path="Job_04.tor"/>
+   <Commands Path="Job_04.tci"/>
+   <Output Path="output_files_37172.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:53:05" JobProcessID="37172" JobOutputSpec="output_files_37172.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_04"/>
+  </Analysis>
+  <Analysis Path="Job_05" Name="Job_05">
+   <Objects Path="Job_05.tor"/>
+   <Commands Path="Job_05.tci"/>
+   <Output Path="output_files_2600.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:53:57" JobProcessID="2600" JobOutputSpec="output_files_2600.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_05"/>
+  </Analysis>
+  <Analysis Path="Job_06" Name="Job_06">
+   <Objects Path="Job_06.tor"/>
+   <Commands Path="Job_06.tci"/>
+   <Output Path="output_files_25960.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:54:11" JobProcessID="25960" JobOutputSpec="output_files_25960.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_06"/>
+  </Analysis>
+  <Analysis Path="Job_07" Name="Job_07">
+   <Objects Path="Job_07.tor"/>
+   <Commands Path="Job_07.tci"/>
+   <Output Path="output_files_35540.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:54:22" JobProcessID="35540" JobOutputSpec="output_files_35540.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_07"/>
+  </Analysis>
+  <Analysis Path="Job_08" Name="Job_08">
+   <Objects Path="Job_08.tor"/>
+   <Commands Path="Job_08.tci"/>
+   <Output Path="output_files_18260.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:54:31" JobProcessID="18260" JobOutputSpec="output_files_18260.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_08"/>
+  </Analysis>
+  <Analysis Path="Job_09" Name="Job_09">
+   <Objects Path="Job_09.tor"/>
+   <Commands Path="Job_09.tci"/>
+   <Output Path="output_files_17836.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:54:43" JobProcessID="17836" JobOutputSpec="output_files_17836.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_09"/>
+  </Analysis>
+  <Analysis Path="Job_10" Name="Job_10">
+   <Objects Path="Job_10.tor"/>
+   <Commands Path="Job_10.tci"/>
+   <Output Path="output_files_23572.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:54:52" JobProcessID="23572" JobOutputSpec="output_files_23572.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_10"/>
+  </Analysis>
+  <Analysis Path="Job_11" Name="Job_11">
+   <Objects Path="Job_11.tor"/>
+   <Commands Path="Job_11.tci"/>
+   <Output Path="output_files_9120.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:55:02" JobProcessID="9120" JobOutputSpec="output_files_9120.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_11"/>
+  </Analysis>
+  <Analysis Path="Job_12" Name="Job_12">
+   <Objects Path="Job_12.tor"/>
+   <Commands Path="Job_12.tci"/>
+   <Output Path="output_files_7688.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:55:12" JobProcessID="7688" JobOutputSpec="output_files_7688.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_12"/>
+  </Analysis>
+  <Analysis Path="Job_13" Name="Job_13">
+   <Objects Path="Job_13.tor"/>
+   <Commands Path="Job_13.tci"/>
+   <Output Path="output_files_9436.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:55:21" JobProcessID="9436" JobOutputSpec="output_files_9436.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_13"/>
+  </Analysis>
+  <Analysis Path="Job_14" Name="Job_14">
+   <Objects Path="Job_14.tor"/>
+   <Commands Path="Job_14.tci"/>
+   <Output Path="output_files_15156.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:55:33" JobProcessID="15156" JobOutputSpec="output_files_15156.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_14"/>
+  </Analysis>
+  <Analysis Path="Job_15" Name="Job_15">
+   <Objects Path="Job_15.tor"/>
+   <Commands Path="Job_15.tci"/>
+   <Output Path="output_files_36656.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:55:42" JobProcessID="36656" JobOutputSpec="output_files_36656.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_15"/>
+  </Analysis>
+  <Analysis Path="Job_16" Name="Job_16">
+   <Objects Path="Job_16.tor"/>
+   <Commands Path="Job_16.tci"/>
+   <Output Path="output_files_34036.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:55:53" JobProcessID="34036" JobOutputSpec="output_files_34036.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_16"/>
+  </Analysis>
+  <Analysis Path="Job_17" Name="Job_17">
+   <Objects Path="Job_17.tor"/>
+   <Commands Path="Job_17.tci"/>
+   <Output Path="output_files_25996.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:56:04" JobProcessID="25996" JobOutputSpec="output_files_25996.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_17"/>
+  </Analysis>
+  <Analysis Path="Job_18" Name="Job_18">
+   <Objects Path="Job_18.tor"/>
+   <Commands Path="Job_18.tci"/>
+   <Output Path="output_files_13940.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:56:12" JobProcessID="13940" JobOutputSpec="output_files_13940.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_18"/>
+  </Analysis>
+  <Analysis Path="Job_19" Name="Job_19">
+   <Objects Path="Job_19.tor"/>
+   <Commands Path="Job_19.tci"/>
+   <Output Path="output_files_11624.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:56:19" JobProcessID="11624" JobOutputSpec="output_files_11624.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_19"/>
+  </Analysis>
+  <Analysis Path="Job_20" Name="Job_20">
+   <Objects Path="Job_20.tor"/>
+   <Commands Path="Job_20.tci"/>
+   <Output Path="output_files_24252.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:56:27" JobProcessID="24252" JobOutputSpec="output_files_24252.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_20"/>
+  </Analysis>
+  <Analysis Path="Job_21" Name="Job_21">
+   <Objects Path="Job_21.tor"/>
+   <Commands Path="Job_21.tci"/>
+   <Output Path="output_files_14652.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:56:39" JobProcessID="14652" JobOutputSpec="output_files_14652.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_21"/>
+  </Analysis>
+  <Analysis Path="Job_22" Name="Job_22">
+   <Objects Path="Job_22.tor"/>
+   <Commands Path="Job_22.tci"/>
+   <Output Path="output_files_37624.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:56:47" JobProcessID="37624" JobOutputSpec="output_files_37624.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_22"/>
+  </Analysis>
+  <Analysis Path="Job_23" Name="Job_23">
+   <Objects Path="Job_23.tor"/>
+   <Commands Path="Job_23.tci"/>
+   <Output Path="output_files_30240.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:56:55" JobProcessID="30240" JobOutputSpec="output_files_30240.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_23"/>
+  </Analysis>
+  <Analysis Path="Job_24" Name="Job_24">
+   <Objects Path="Job_24.tor"/>
+   <Commands Path="Job_24.tci"/>
+   <Output Path="output_files_30604.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:57:03" JobProcessID="30604" JobOutputSpec="output_files_30604.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_24"/>
+  </Analysis>
+  <Analysis Path="Job_25" Name="Job_25">
+   <Objects Path="Job_25.tor"/>
+   <Commands Path="Job_25.tci"/>
+   <Output Path="output_files_36724.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T20:57:11" JobProcessID="36724" JobOutputSpec="output_files_36724.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_25"/>
+  </Analysis>
+  <Analysis Path="Job_26" Name="Job_26">
+   <Objects Path="Job_26.tor"/>
+   <Commands Path="Job_26.tci"/>
+   <Output Path="output_files_23648.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:14:00" JobProcessID="23648" JobOutputSpec="output_files_23648.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_26"/>
+  </Analysis>
+  <Analysis Path="Job_27" Name="Job_27">
+   <Objects Path="Job_27.tor"/>
+   <Commands Path="Job_27.tci"/>
+   <Output Path="output_files_7188.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:14:12" JobProcessID="7188" JobOutputSpec="output_files_7188.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_27"/>
+  </Analysis>
+  <Analysis Path="Job_28" Name="Job_28">
+   <Objects Path="Job_28.tor"/>
+   <Commands Path="Job_28.tci"/>
+   <Output Path="output_files_37436.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:14:22" JobProcessID="37436" JobOutputSpec="output_files_37436.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_28"/>
+  </Analysis>
+  <Analysis Path="Job_29" Name="Job_29">
+   <Objects Path="Job_29.tor"/>
+   <Commands Path="Job_29.tci"/>
+   <Output Path="output_files_37608.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:14:29" JobProcessID="37608" JobOutputSpec="output_files_37608.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_29"/>
+  </Analysis>
+  <Analysis Path="Job_30" Name="Job_30">
+   <Objects Path="Job_30.tor"/>
+   <Commands Path="Job_30.tci"/>
+   <Output Path="output_files_9160.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:14:38" JobProcessID="9160" JobOutputSpec="output_files_9160.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_30"/>
+  </Analysis>
+  <Analysis Path="Job_31" Name="Job_31">
+   <Objects Path="Job_31.tor"/>
+   <Commands Path="Job_31.tci"/>
+   <Output Path="output_files_25620.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:14:47" JobProcessID="25620" JobOutputSpec="output_files_25620.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_31"/>
+  </Analysis>
+  <Analysis Path="Job_32" Name="Job_32">
+   <Objects Path="Job_32.tor"/>
+   <Commands Path="Job_32.tci"/>
+   <Output Path="output_files_32368.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:14:54" JobProcessID="32368" JobOutputSpec="output_files_32368.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_32"/>
+  </Analysis>
+  <Analysis Path="Job_33" Name="Job_33">
+   <Objects Path="Job_33.tor"/>
+   <Commands Path="Job_33.tci"/>
+   <Output Path="output_files_32924.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:15:06" JobProcessID="32924" JobOutputSpec="output_files_32924.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_33"/>
+  </Analysis>
+  <Analysis Path="Job_34" Name="Job_34">
+   <Objects Path="Job_34.tor"/>
+   <Commands Path="Job_34.tci"/>
+   <Output Path="output_files_10728.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:15:15" JobProcessID="10728" JobOutputSpec="output_files_10728.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_34"/>
+  </Analysis>
+  <Analysis Path="Job_35" Name="Job_35">
+   <Objects Path="Job_35.tor"/>
+   <Commands Path="Job_35.tci"/>
+   <Output Path="output_files_23364.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:15:25" JobProcessID="23364" JobOutputSpec="output_files_23364.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_35"/>
+  </Analysis>
+  <Analysis Path="Job_36" Name="Job_36">
+   <Objects Path="Job_36.tor"/>
+   <Commands Path="Job_36.tci"/>
+   <Output Path="output_files_26532.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:15:33" JobProcessID="26532" JobOutputSpec="output_files_26532.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_36"/>
+  </Analysis>
+  <Analysis Path="Job_37" Name="Job_37">
+   <Objects Path="Job_37.tor"/>
+   <Commands Path="Job_37.tci"/>
+   <Output Path="output_files_27244.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:15:42" JobProcessID="27244" JobOutputSpec="output_files_27244.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_37"/>
+  </Analysis>
+  <Analysis Path="Job_38" Name="Job_38">
+   <Objects Path="Job_38.tor"/>
+   <Commands Path="Job_38.tci"/>
+   <Output Path="output_files_17224.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:15:53" JobProcessID="17224" JobOutputSpec="output_files_17224.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_38"/>
+  </Analysis>
+  <Analysis Path="Job_39" Name="Job_39">
+   <Objects Path="Job_39.tor"/>
+   <Commands Path="Job_39.tci"/>
+   <Output Path="output_files_32012.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:02" JobProcessID="32012" JobOutputSpec="output_files_32012.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_39"/>
+  </Analysis>
+  <Analysis Path="Job_40" Name="Job_40">
+   <Objects Path="Job_40.tor"/>
+   <Commands Path="Job_40.tci"/>
+   <Output Path="output_files_33748.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:10" JobProcessID="33748" JobOutputSpec="output_files_33748.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_40"/>
+  </Analysis>
+  <Analysis Path="Job_41" Name="Job_41">
+   <Objects Path="Job_41.tor"/>
+   <Commands Path="Job_41.tci"/>
+   <Output Path="output_files_15100.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:17" JobProcessID="15100" JobOutputSpec="output_files_15100.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_41"/>
+  </Analysis>
+  <Analysis Path="Job_42" Name="Job_42">
+   <Objects Path="Job_42.tor"/>
+   <Commands Path="Job_42.tci"/>
+   <Output Path="output_files_36172.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:25" JobProcessID="36172" JobOutputSpec="output_files_36172.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_42"/>
+  </Analysis>
+  <Analysis Path="Job_43" Name="Job_43">
+   <Objects Path="Job_43.tor"/>
+   <Commands Path="Job_43.tci"/>
+   <Output Path="output_files_35088.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:32" JobProcessID="35088" JobOutputSpec="output_files_35088.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_43"/>
+  </Analysis>
+  <Analysis Path="Job_44" Name="Job_44">
+   <Objects Path="Job_44.tor"/>
+   <Commands Path="Job_44.tci"/>
+   <Output Path="output_files_35008.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:40" JobProcessID="35008" JobOutputSpec="output_files_35008.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_44"/>
+  </Analysis>
+  <Analysis Path="Job_45" Name="Job_45">
+   <Objects Path="Job_45.tor"/>
+   <Commands Path="Job_45.tci"/>
+   <Output Path="output_files_38340.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:49" JobProcessID="38340" JobOutputSpec="output_files_38340.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_45"/>
+  </Analysis>
+  <Analysis Path="Job_46" Name="Job_46">
+   <Objects Path="Job_46.tor"/>
+   <Commands Path="Job_46.tci"/>
+   <Output Path="output_files_37876.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:16:55" JobProcessID="37876" JobOutputSpec="output_files_37876.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_46"/>
+  </Analysis>
+  <Analysis Path="Job_47" Name="Job_47">
+   <Objects Path="Job_47.tor"/>
+   <Commands Path="Job_47.tci"/>
+   <Output Path="output_files_38232.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:17:02" JobProcessID="38232" JobOutputSpec="output_files_38232.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_47"/>
+  </Analysis>
+  <Analysis Path="Job_48" Name="Job_48">
+   <Objects Path="Job_48.tor"/>
+   <Commands Path="Job_48.tci"/>
+   <Output Path="output_files_36340.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T21:17:09" JobProcessID="36340" JobOutputSpec="output_files_36340.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_48"/>
+  </Analysis>
+ </Results>
+ <ResultWindows/>
+ <WizardData>
+  <ReflectorWizard>
+   <Dual-Angle1 Type="266" Value="0"/>
+   <Dual-Angle2 Type="266" Value="0"/>
+   <Dual-Diameter Unit="m" Type="265" Value="11.1"/>
+   <Dual-Eccentricity Type="266" Value="1.5"/>
+   <Dual-FocalLength Unit="m" Type="265" Value="6.66"/>
+   <Dual-FocalLengthRelative Type="266" Value="0.6"/>
+   <Dual-FociDistance Unit="m" Type="265" Value="3.33"/>
+   <Dual-FociDistanceRelative Type="266" Value="0.5"/>
+   <Dual-Frequency Unit="GHz" Type="265" Value="3.625"/>
+   <Dual-Mizuguchi Type="1" Value="1"/>
+   <Dual-Prefix Type="274" Value="dual_"/>
+   <Dual-UseRelative Type="1" Value="1"/>
+   <Main-SelectFrequency Type="1" Value="1"/>
+   <Single-Diameter Unit="m" Type="265" Value="0.6"/>
+   <Single-FocalLength Unit="m" Type="265" Value="0.24"/>
+   <Single-FocalLengthRelative Type="266" Value="0.4"/>
+   <Single-Frequency Unit="GHz" Type="265" Value="20"/>
+   <Single-Offset Unit="m" Type="265" Value="0"/>
+   <Single-OffsetRelative Type="266" Value="0"/>
+   <Single-Prefix Type="274" Value="single_"/>
+   <Single-UseRelative Type="1" Value="1"/>
+  </ReflectorWizard>
+ </WizardData>
+ <view_configuration>
+  <view pos="0x0" show_surfaces="yes" minimized="no" view_settings_dialog_splitter_state="" enable_psi_slider="no" translation="-0.06571467567559065,-0.04299823453329944,-1.203459543797996" name="view_1" perspective_view="no" show_rulers="yes" enable_phi_slider="no" view_settings_dialog_state="" collapsed_view_settings_entries="" disabled_toolbars="" locked_phi_theta="no" rotation="1.185631259488214,3.696380813503371,6.275953947293004" size="1454x923" enable_theta_slider="no" visible="yes" maximized="yes" orientation_type="0" show_wire_grid="yes"/>
+ </view_configuration>
+</Project>

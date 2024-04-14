@@ -1,0 +1,156 @@
+[Comment]
+Project comment
+[TOR file]
+working/QuestionFive.tor
+[Auxiliary TOR files]
+[TCI file]
+working/QuestionFive.tci
+[Default units]
+GHz m S/m 1
+[Project setup]
+<!DOCTYPE Project>
+<Project version="10.3.0" application="GRASP">
+ <Results>
+  <Analysis Path="Job_01" Name="Job_01">
+   <Objects Path="Job_01.tor"/>
+   <Commands Path="Job_01.tci"/>
+   <Output Path="output_files_27240.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T23:38:05" JobProcessID="27240" JobOutputSpec="output_files_27240.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_01"/>
+  </Analysis>
+  <Analysis Path="Job_02" Name="Job_02">
+   <Objects Path="Job_02.tor"/>
+   <Commands Path="Job_02.tci"/>
+   <Output Path="output_files_37972.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T23:46:18" JobProcessID="37972" JobOutputSpec="output_files_37972.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_02"/>
+  </Analysis>
+  <Analysis Path="Job_03" Name="Job_03">
+   <Objects Path="Job_03.tor"/>
+   <Commands Path="Job_03.tci"/>
+   <Output Path="output_files_24916.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T23:47:56" JobProcessID="24916" JobOutputSpec="output_files_24916.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_03"/>
+  </Analysis>
+  <Analysis Path="Job_04" Name="Job_04">
+   <Objects Path="Job_04.tor"/>
+   <Commands Path="Job_04.tci"/>
+   <Output Path="output_files_34136.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T23:49:29" JobProcessID="34136" JobOutputSpec="output_files_34136.xml" JobHidden="false" JobStatus="Job Failed" Name="Job_04"/>
+  </Analysis>
+  <Analysis Path="Job_05" Name="Job_05">
+   <Objects Path="Job_05.tor"/>
+   <Commands Path="Job_05.tci"/>
+   <Output Path="output_files_32668.xml"/>
+   <Job NumCommands="3" StartTime="2024-04-13T23:49:51" JobProcessID="32668" JobOutputSpec="output_files_32668.xml" JobHidden="false" JobStatus="Job Finished" Name="Job_05"/>
+  </Analysis>
+ </Results>
+ <ResultWindows>
+  <PlotWidget type="Field:RadiationPattern">
+   <Title text="Job_05 → single_cut → Radiation Pattern" font="MS Shell Dlg 2,14,-1,5,75,0,0,0,0,0"/>
+   <Axis useFixedStep="0" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="0" spacing="2" text="Amplitude" tickUnit="0" stepMinor="5" minimum="-94" colorBarWidth="10" appendUnit="1" stepMajor="10" maximum="6" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="dB" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="1" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Axis useFixedStep="2" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" id="2" spacing="2" text="θ" tickUnit="0" stepMinor="5" minimum="-90" colorBarWidth="10" appendUnit="1" stepMajor="45" maximum="90" enabled="1" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" unit="deg" inverted="0" startAt="0" margin="0"/>
+   <Axis minimum="0" maximum="1000" enabled="0" colorBarWidth="10" inverted="0" id="3" fontLabel="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0" fontNumeral="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" spacing="2" margin="0"/>
+   <Canvas color_r="255" color_a="255" color_b="255" color_g="255"/>
+   <Grid>
+    <Component direction="0" active="2"/>
+    <Component direction="1" active="2"/>
+    <PenMinor width="0" color_r="160" color_a="255" color_b="164" color_g="160" style="3"/>
+    <PenMajor width="0" color_r="192" color_a="255" color_b="192" color_g="192" style="1"/>
+   </Grid>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;cf2b4cd18a2e9e285434cce9952cf728&quot;>&#xa;  &lt;Parameter Values=&quot; 30.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-90.0000000000000;90.0000000000000;1001]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_05/single_cut.cut" time="2024-04-13T23:49:55"/>
+    <Line width="2" color_r="0" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="30.0 GHz → E_co → 0.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="0" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="0" length="0"/>
+    <Parameter class="Theta" begin="0" length="1001"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;cf2b4cd18a2e9e285434cce9952cf728&quot;>&#xa;  &lt;Parameter Values=&quot; 30.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-90.0000000000000;90.0000000000000;1001]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_05/single_cut.cut" time="2024-04-13T23:49:55"/>
+    <Line width="2" color_r="255" color_a="255" color_b="0" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="30.0 GHz → E_co → 45.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="1" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="0" length="0"/>
+    <Parameter class="Theta" begin="0" length="1001"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;cf2b4cd18a2e9e285434cce9952cf728&quot;>&#xa;  &lt;Parameter Values=&quot; 30.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-90.0000000000000;90.0000000000000;1001]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_05/single_cut.cut" time="2024-04-13T23:49:55"/>
+    <Line width="2" color_r="0" color_a="255" color_b="0" color_g="255"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="30.0 GHz → E_co → 90.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="2" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="0" length="0"/>
+    <Parameter class="Theta" begin="0" length="1001"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;cf2b4cd18a2e9e285434cce9952cf728&quot;>&#xa;  &lt;Parameter Values=&quot; 30.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-90.0000000000000;90.0000000000000;1001]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_05/single_cut.cut" time="2024-04-13T23:49:55"/>
+    <Line width="2" color_r="0" color_a="255" color_b="255" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="30.0 GHz → E_cx → 0.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="0" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="1" length="0"/>
+    <Parameter class="Theta" begin="0" length="1001"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;cf2b4cd18a2e9e285434cce9952cf728&quot;>&#xa;  &lt;Parameter Values=&quot; 30.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-90.0000000000000;90.0000000000000;1001]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_05/single_cut.cut" time="2024-04-13T23:49:55"/>
+    <Line width="2" color_r="255" color_a="255" color_b="255" color_g="0"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="30.0 GHz → E_cx → 45.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="1" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="1" length="0"/>
+    <Parameter class="Theta" begin="0" length="1001"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <PlotCurve type="Field:RadiationPattern">
+    <EDIFile xmlHeader="&lt;!DOCTYPE FileMetaData>&#xa;&lt;Parameters>&#xa; &lt;File Format=&quot;Ticra&quot; Path=&quot;single_cut.cut&quot; Type=&quot;Cut:Spherical&quot; Object=&quot;single_cut&quot; Hash=&quot;cf2b4cd18a2e9e285434cce9952cf728&quot;>&#xa;  &lt;Parameter Values=&quot; 30.0000000000000&quot; Unit=&quot;GHz&quot; Name=&quot;Frequency&quot;/>&#xa;  &lt;Parameter Values=&quot;[0.000000000000000E+000;90.0000000000000;3]&quot; Unit=&quot;deg&quot; Name=&quot;Phi&quot;/>&#xa;  &lt;Parameter Values=&quot;[-90.0000000000000;90.0000000000000;1001]&quot; Unit=&quot;deg&quot; Name=&quot;Theta&quot;/>&#xa; &lt;/File>&#xa;&lt;/Parameters>&#xa;" name="Job_05/single_cut.cut" time="2024-04-13T23:49:55"/>
+    <Line width="2" color_r="0" color_a="255" color_b="255" color_g="255"/>
+    <Symbol size="5" style="-1"/>
+    <Curve Offset="0" fitted="0" visible="1" inverted="0" style="1" Peak="false "/>
+    <Font data="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+    <Legend text="30.0 GHz → E_cx → 90.0 deg [Amplitude]"/>
+    <Axis y-axis="left" x-axis="bottom"/>
+    <Parameter class="Frequency" begin="0" length="0"/>
+    <Parameter class="Phi" begin="2" length="0"/>
+    <Parameter class="ProjectionComponents:Ludwig3" begin="1" length="0"/>
+    <Parameter class="Theta" begin="0" length="1001"/>
+    <Format to="0"/>
+    <Variable nameEDX="" className="Field:RadiationPattern"/>
+   </PlotCurve>
+   <Legend ratio="0.3" position="1"/>
+  </PlotWidget>
+ </ResultWindows>
+ <WizardData/>
+ <view_configuration>
+  <view pos="0x0" show_surfaces="yes" minimized="no" view_settings_dialog_splitter_state="" enable_psi_slider="no" translation="0.003934106198066429,-0.08124535743614934,-2.311188751031587" name="view_1" perspective_view="no" show_rulers="yes" enable_phi_slider="no" view_settings_dialog_state="" collapsed_view_settings_entries="" disabled_toolbars="" locked_phi_theta="no" rotation="1.458445667059391,3.365883155313348,5.267005229935497" size="1454x923" enable_theta_slider="no" visible="yes" maximized="yes" orientation_type="0" show_wire_grid="yes"/>
+ </view_configuration>
+</Project>

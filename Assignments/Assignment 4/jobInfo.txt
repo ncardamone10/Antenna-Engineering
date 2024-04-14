@@ -1,0 +1,8 @@
+See job 19 for a-c
+F/D = 0.4
+Job 20, taper -4
+Now stepping in 1 dB taper steps
+Job 46, taper -30
+F/D = 2
+Job 47, taper -4
+Job 73, taper -30 (1 dB steps)

@@ -1,0 +1,25 @@
+ Tci file: Job_04.tci
+ Out file: Job_04.out
+ Log file: Job_04.log
+ 
+ 
+ GRASP-SE version 10.3.0 (Windows ia32/x86 32-bit)
+ 
+ 
+ GRASP-SE found  32 CPU cores
+ (Student edition limited to 1 CPU core)
+ 
+ ----- TASK No. 1 -----     Started at 13:07:45 on April 13, 2024
+ 
+ single_po get_currents ( source : sequence(ref(single_feed)))
+ 
+ ERROR: Message from object spherical_grid:
+ No test points could be found in the output grid. Check grid definition.
+ 
+ ERROR: Message from object single_po:
+ The 'get_currents' command failed due to errors.
+ 
+ 
+ ----- END OF TASKS -----     Completed at 13:07:45 on April 13, 2024
+ 
+ Total time was 0.02 sec

@@ -1,0 +1,11 @@
+VERSION: TICRA-EM-FIELD-V0.1
+SOURCE_FIELD_NAME: single_po
+FREQUENCY_NAME: single_frequencies
+FREQUENCY:  20.0000 GHz,
+SOURCE_FIELD_NAME: single_feed
+FREQUENCY_NAME: single_frequencies
+FREQUENCY:  20.0000 GHz,
+++++
+ 1
+           1           2           2           1
+           0           0

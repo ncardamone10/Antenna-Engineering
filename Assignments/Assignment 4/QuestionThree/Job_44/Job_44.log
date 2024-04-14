@@ -1,0 +1,22 @@
+ 
+ GRASP-SE version 10.3.0 (Windows ia32/x86 32-bit)
+ 
+ (Student edition limited to 1 CPU core)
+ 
+ Program started at 21:51:15 on 13 April 2024
+GRASP-SE>COMMAND OBJECT single_po get_currents ( source : sequence(ref(single_feed)))   single_po_cmd 
+ ----- TASK No. 1 -----     Started at 21:51:15 on April 13, 2024                
+  PO1 =   21  PO2 =   67  Face =    1, Final PO-values from auto-convergence
+  PTD =   62              Edge =    1, Final PTD-value from auto-convergence.
+  Spill-over:     0.2644 dB
+ Total task time:  1.16 sec               
+GRASP-SE>COMMAND OBJECT single_cut get_field ( source : sequence(ref(single_po),   ref(single_feed))) single_get_field_cmd 
+ ----- TASK No. 2 -----     Started at 21:51:16 on April 13, 2024                
+ Total task time:  0.06 sec               
+GRASP-SE>COMMAND OBJECT spherical_grid get_field ( source : sequence(ref(single_po),   ref(single_feed))) cmd_1 
+ ----- TASK No. 3 -----     Started at 21:51:16 on April 13, 2024                
+ Total task time:  1.41 sec               
+GRASP-SE>QUIT 
+ ----- END OF TASKS -----     Completed at 21:51:18 on April 13, 2024            
+ Total time was 2.67 sec
+ Program stopped at 21:51:18 on 13 April 2024

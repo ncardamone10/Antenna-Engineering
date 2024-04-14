@@ -1,0 +1,7 @@
+<OutputFiles>
+ <File Format="Text" Path="Job_04.tci" Type="tci" Object="unknown" Hash="e1db8fdf0556a003674990bc0b227504"/>
+ <File Format="Text" Path="Job_04.tor" Type="tor" Object="unknown" Hash="fe137e52046db192c6c74b213b2bba22"/>
+ <File Format="Text" Path="Job_04.out" Type="out" Object="unknown" Hash="c9aab89dcb2cee72af60fd455afadea1"/>
+ <File Format="Text" Path="comments.txt" Type="Comments"/>
+ <File Format="Text" Path="screenoutput.txt" Type="Screen"/>
+</OutputFiles>

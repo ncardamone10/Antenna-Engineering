@@ -34,7 +34,7 @@ def getFz(beta, k, theta, tau1, tau2, I0=1):
     S2, C2 = sc.fresnel(tau2)
 
     term1 = np.sqrt(np.pi / (2 * beta + EPSILON))*I0
-    term2 = np.exp(-1j * (k * np.cos(theta))**2 / ( 4 * beta+ EPSILON))
+    term2 = np.exp(-1j * (k * np.cos(theta))**2 / ( 4 * beta + EPSILON))
 
     result = term1 * term2 * (C2 - C1 - 1j * (S2 - S1)) 
     return result
